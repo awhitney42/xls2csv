@@ -1,0 +1,17 @@
+README for xls2csv.py
+Python Script to Convert Microsoft Excel XLS Files to Comma-Separated Values (CSV) Files.
+
+Usage: python xls2csv.py my_data.xls
+
+The script will convert my_data.xls to CSV and output to the file my_data.csv.
+
+-or even better-
+
+for F in *.xls; do echo "$F"; python xls2csv.py "$F"; done
+
+To convert all XLS files within a directory.
+
+Note:
+
+You can optionally specify and datetime columns in the 'datecolumns' array near the beginning of the script, and the script will convert them to a standard datetime format rather than the Excel integer for the datetime value.
+
